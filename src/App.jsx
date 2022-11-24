@@ -1,14 +1,13 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 
-import MainNavigation from './components/layout/MainNavigation';
+import Layout from './components/layout/Layout/Layout';
 import AllMeetupsPage from './pages/AllMeetups';
 import FavoritesPage from './pages/Favorites';
 import NewMeetupsPage from './pages/NewMeetups';
 
 function App() {
   return (
-    <>
-      <MainNavigation />
+    <Layout>
       <Routes>
         <Route path='/' element={ <AllMeetupsPage /> }></Route>
         <Route path='/new-meetup' element={ <NewMeetupsPage /> }></Route>
@@ -16,7 +15,7 @@ function App() {
         <Route path='/' element={ <AllMeetupsPage/> }></Route>
         <Route path='*' element={ <Navigate replace to='/' /> } />
       </Routes>
-    </>
+    </Layout>
   );
 }
 
