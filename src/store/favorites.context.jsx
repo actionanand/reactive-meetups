@@ -32,7 +32,7 @@ export function FavoriteContextProvider({children}) {
   }
 
   function isItemFavHandler(meetupId) {
-    return userFav.some(meetup => meetupId !== meetup.id);
+    return userFav.some(meetup => meetupId === meetup.id);
   }
 
   return <FavoriteContext.Provider value={context}>
