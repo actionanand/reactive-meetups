@@ -14,10 +14,10 @@ function NewMeetupForm({onAddMeetup}) {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const title = titleInputRef.current.value;
-    const image = imgInputRef.current.value;
-    const description = descInputRef.current.value;
-    const address = addressInputRef.current.value;
+    const title = titleInputRef.current.value.trim();
+    const image = imgInputRef.current.value.trim();
+    const description = descInputRef.current.value.trim();
+    const address = addressInputRef.current.value.trim();
 
     const meetupdata = {
       title,

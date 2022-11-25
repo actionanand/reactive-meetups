@@ -2,14 +2,12 @@ import { useNavigate } from 'react-router-dom';
 
 import NewMeetupForm from '../components/meetups/NewMeetupForm/NewMeetupForm';
 
-const meetupUrl = 'https://vue-http-exmp-default-rtdb.firebaseio.com/';
-
 
 function NewMeetupsPage() {
   const navigate = useNavigate();
-  
+
   const addMeetupHandler = meetup => {
-    fetch(meetupUrl + 'reactive-Meetups.json', 
+    fetch(process.env.REACT_APP_MEETUP_URL + 'reactive-Meetups.json', 
     {
       method: 'POST',
       body: JSON.stringify(meetup),
