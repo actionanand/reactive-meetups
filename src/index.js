@@ -5,11 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FavoriteContextProvider } from './store/favorites.context';
 
 const app = (
-  <BrowserRouter basename='reactive-meetups'>
-    <App />
-  </BrowserRouter>
+  <FavoriteContextProvider>
+    <BrowserRouter basename='reactive-meetups'>
+      <App />
+    </BrowserRouter>
+  </FavoriteContextProvider>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
