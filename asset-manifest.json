@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactive-meetups/static/css/main.49a6b772.css",
+    "main.js": "/reactive-meetups/static/js/main.3474a022.js",
+    "static/js/787.63be69db.chunk.js": "/reactive-meetups/static/js/787.63be69db.chunk.js",
+    "index.html": "/reactive-meetups/index.html",
+    "main.49a6b772.css.map": "/reactive-meetups/static/css/main.49a6b772.css.map",
+    "main.3474a022.js.map": "/reactive-meetups/static/js/main.3474a022.js.map",
+    "787.63be69db.chunk.js.map": "/reactive-meetups/static/js/787.63be69db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49a6b772.css",
+    "static/js/main.3474a022.js"
+  ]
+}
